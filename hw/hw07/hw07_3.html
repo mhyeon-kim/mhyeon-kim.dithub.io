@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <title>예약 페이지</title>
+
+    <style>
+        .div1 {
+            font-family: 나눔고딕;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        .p1 {
+            font-size: 20px;
+            font-family: fantasy;
+            color: rgb(28, 50, 92);
+            margin: 10px;
+        }
+
+        #img1 {
+            width: 25px;
+            height: 25px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .ul1 {
+            clear: both;
+            font-size: 20px;
+            font-family: 나눔고딕;
+            text-align: center;
+            background-color: rgb(1, 131, 206);
+            height: 100%;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline;
+            margin: 5px 30px;
+            color: whitesmoke;
+        }
+
+        a {
+            color: whitesmoke;
+        }
+
+        .p2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 25px;
+            color: rgb(90, 128, 199);
+            text-align: center;
+            margin: 15px 15px 0px 15px;
+        }
+
+        .p3 {
+            font-family: 나눔고딕;
+            font-size: 15px;
+            font-style: oblique;
+            text-align: center;
+            color: rgb(54, 54, 54);
+            margin: 0px 15px 15px 15px;
+            padding-top: 5px;
+        }
+
+        .p4 {
+            font-size: 15px;
+            color: rgb(54, 54, 54);
+            margin: 0px;
+            padding-right: 10px;
+            padding-bottom: 0px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .div2 {
+            padding: 20px;
+            margin: 0px;
+            display: grid;
+            grid-template-columns: 220px 100px 1fr;
+        }
+
+        .small1 {
+            margin: 0px;
+            border-bottom: 1px solid rgb(179, 179, 179);
+        }
+
+        #main {
+            color: rgb(54, 54, 54);
+            font-style: italic;
+            font-size: 15px;
+            margin: 0px;
+        }
+
+        #f {
+            text-align: right;
+        }
+
+        #book {
+            text-align: right;
+        }
+
+        div a {
+            color: rgb(54, 54, 54);
+        }
+
+        div p {
+            font-size: 13px;
+            color: rgb(179, 179, 179);
+            column-span: all;
+            margin: 0px;
+            padding-bottom: 15px;
+        }
+
+        .p5 {
+            color: rgb(136, 3, 3);
+            margin: 0px;
+            padding: 13px;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #li1 {
+            color: rgb(54, 54, 54);
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="grid">
+            <div class=div1> <img id="img1" src="img/museum.png" alt="museum">
+                국립중앙박물관 <br>
+                <p class="p1">National Museum of Korea</p>
+            </div>
+            <div class="div2">
+                <div>
+                    <form>
+                        <p>ID : <input type="text" name="ID" size "15" required></p>
+                        <p>PW : <input type="password" name="psw" size="15" required></p>
+                    </form>
+                </div>
+                <div id="f">
+                    <p class="p4">Language</p>
+                    <select name="language">
+                        <option value="1" selected>한국어</option>
+                        <option value="2">English</option>
+                        <option value="3">日本語</option>
+                        <option value="4">中國話</option>
+                        <option value="5">Français</option>
+                        <option value="6">castellano</option>
+                    </select>
+                </div>
+                <div id="book">
+                    <a href="">예약하기</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <article>
+            <ul class="ul1">
+                <li><a href="./../hw06/hw06_2.html">박물관 소개</a></li>
+                <li>|</li>
+                <li><a href="./../hw06/hw06_3.html">관람 및 전시</a></li>
+                <li>|</li>
+                <li><a href="./../hw06//hw06_4.html">문화상품</a></li>
+                <li>|</li>
+                <li><a href="./../hw06/hw06_5.html">오시는 길</a></li>
+                <li>|</li>
+                <li><a href="">고객센터</a></li>
+            </ul>
+        </article>
+        <br>
+        <article>
+            <center>
+            <form>
+                <h3>예약 날짜 선택</h3>
+                Date : <input type="date" name="date" min="2021-04-01" max="2021-06-30">
+                <br>
+                <input type="submit" value="예약">
+                <input type="reset" value="다시 작성">
+            </form>
+            <div id="div3">
+                <p class="p5">예약시 유의사항</p>
+                <li id="li1">
+                    휴관일은 매년 1월 1일과 설날, 추석으로 이루어져 있습니다.
+                    예약시 이 날짜는 피해주세요.
+                    <br>상설전시실 정기 휴실일은 매년 4월, 11월 첫째주 월요일 입니다.</li>
+            </div>
+        </center>
+        </article>
+        <br><br>
+        <small class="small1"><img src="./img/phone-call.png" width="15px" height="15px"> 02-2077-9000
+            <img src="./img/link.png" width="15px" height="15px">https://www.museum.go.kr/site/main/home
+            <img src="./img/place.png" width="15px" height="15px">서울특별시 용산구 서빙고로 137</small>
+    </section>
+    <footer>
+        <br><a href="./hw07.html" id="main">국립중앙박물관 메인 홈으로</a>
+        <br><small>동덕여대 인터넷 프로그래밍 수업 7주차 과제 21.04.24</small>
+    </footer>
+</body>
+
+</html>
